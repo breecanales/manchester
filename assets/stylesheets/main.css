@@ -1,173 +1,159 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
 /*--header and navigation*/
 html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 body {
-	font-family: 'Arial', sans-serif;
-	font-size: 100%;
-	font-weight: 400;
-	padding: 0;
-	margin: 0;
-}
-	
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
+  font-family: "Arial", sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.screen-reader-text{
-	position: absolute;
-	top: -9999px;
-	left: -9999px;
-}
-
-.header{
-	color: #fff;
-	background-color: #6caddf;
-	margin-top: 50px;
-	padding: 20px 0px;
+.header {
+  color: #fff;
+  background-color: #6caddf;
+  margin-top: 50px;
+  padding: 20px 0px;
 }
 
 .header .wrap {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-	
-.header .logo-wrap{
-	width: 150px;
-	height: 150px;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 50px;
 }
 
-.header .logo{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
+.header .logo-wrap {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.header-text{
-	width: calc(50% - 150px);
-	padding-left: 25px;
+.header .logo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
-.header-title{
-	font-size: 2.5rem;
-	font-weight: 400;
-	margin: 0;
+.header-text {
+  width: calc(50% - 150px);
+  padding-left: 25px;
 }
 
-.main-nav{
-	width: calc(50% - 100px);
+.header-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 200;
+  margin: 0;
 }
 
-.social{
-	width: 100px;
+.main-nav {
+  width: calc(50% - 100px);
 }
 
-.main-nav ul{
-	margin: 0;
-	padding: 0;
+.social {
+  width: 100px;
 }
 
-.main-nav li{
-	position: relative;
-	list-style-type: none;
-	display: inline-block;
-	margin: 0 10px;
-	
+.main-nav ul {
+  margin: 0;
+  padding: 0;
 }
 
-.main-nav a{
-	display: block;
-	padding: 10px 15px;
-	color: #fff;
-	text-decoration: none;
-	border: 1px solid #fff;
-	background-color: transparent;
-	transition: all 300ms ease;
+.main-nav li {
+  position: relative;
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.main-nav a {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  background-color: transparent;
+  transition: all 300ms ease;
 }
 
 .main-nav a:hover,
 .main-nav a:active {
-	background-color: #fff;
-	color: #808080;
+  background-color: #fff;
+  color: #808080;
 }
 
 .main-nav .sub-menu {
-	display: none;
-	position: absolute;
-	height: 100%;
-	top: 100%;
-	left: 0;
-	z-index: 3;
+  display: none;
+  position: absolute;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  z-index: 3;
 }
 
 .main-nav .sub-menu li {
-	display: block;
-	width: 100%;
-	background-color: #808080;
-	margin: 0;
+  display: block;
+  width: 100%;
+  background-color: #808080;
+  margin: 0;
 }
 
 .main-nav .sub-menu a {
-	display: block;
-	width: 100%;
-	text-align: left;
-	white-space: nowrap;
+  display: block;
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
 }
 
 .main-nav li:hover > .sub-menu {
-	display: block;
-	
+  display: block;
 }
 
 .social .linkedin svg {
-	width: 35px;
-	height: 35px;
-	fill: #fff;
-	display: block;
+  width: 35px;
+  height: 35px;
+  fill: #fff;
+  display: block;
 }
 
 .main-portfolio {
-	margin: 0;
-	padding: 0;
-	width: 470px;
-	height: 400px;
+  margin: 0;
+  padding: 0;
+  width: 470px;
+  height: 400px;
 }
 
 .main-portfolio .column-sm {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: center;
-	max-width: 1200px;
-	margin: 0 auto;
-	
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .main-content {
-	padding: 0 0 125px;
+  padding: 0 0 125px;
 }
 
 /*--columns */
@@ -185,90 +171,12 @@ img {
   clear: both;
   display: table;
 }
-/*--schedule Beginning--*/
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
-
-/* Month header */
-.month {
-  padding: 50px 25px;
-  width: 50%;
-  background: #6caddf;
-  text-align: center;
-}
-
-/* Month list */
-.month ul {
-  margin: 0;
-  padding: 0;
-}
-
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-/* Previous button inside month header */
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
-
-/* Next button */
-.month .next {
-  float: right;
-  padding-top: 10px;
-}
-
-/* Weekdays (Mon-Sun) */
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-	width: 50%;
-  background-color:#ddd;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
-}
-
-/* Days (1-31) */
-.days {
-  padding: 30px 0;
-  background: #eee;
-  margin: 0;
-  width: 50%;
-}
-
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
-}
-
-/* Highlight the "current" day */
-.days li .active {
-  padding: 5px;
-  background: #6caddf;
-  color: white !important
-}
-
-
-
-/*--schedule end--*/
 
 /*--stadium date picker--*/
 [type="date"] {
-  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  background: #fff
+    url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)
+    97% 50% no-repeat;
 }
 [type="date"]::-webkit-inner-spin-button {
   display: none;
@@ -281,7 +189,8 @@ body {font-family: Verdana, sans-serif;}
 body {
   padding: 4em;
   background: #fff;
-  font: 13px/1.4 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font: 13px/1.4 Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode",
+    Verdana, sans-serif;
 }
 label {
   display: block;
@@ -291,11 +200,10 @@ input {
   border-radius: 5px;
   background-color: #fff;
   padding: 3px 5px;
-  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
   width: 190px;
 }
 /*--end stadium--*/
-
 
 /*--Footer Beginning--*/
 .navbar {
@@ -329,9 +237,9 @@ input {
   color: 6caddf;
 }
 .copyright {
-	text-align: right;
-	color: white;
-	padding-right: 50px;
+  text-align: right;
+  color: white;
+  padding-right: 150px;
 }
 
 /*--Footer Ending--*/
